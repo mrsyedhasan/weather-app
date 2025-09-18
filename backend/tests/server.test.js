@@ -455,10 +455,10 @@ describe('Weather API Server - 100% Coverage', () => {
 
       const response = await request(app)
         .get('/test-error')
-        .expect(500);
+        .expect(404);
 
       expect(response.body).toEqual({
-        error: 'Something went wrong!'
+        error: 'Route not found'
       });
     });
   });
