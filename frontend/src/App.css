@@ -310,6 +310,63 @@ body {
   font-weight: 400;
 }
 
+/* API Usage */
+.api-usage {
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.usage-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.usage-label {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.usage-count {
+  color: #2c3e50;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.usage-bar {
+  width: 120px;
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.usage-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #d4a574 0%, #c1965f 100%);
+  transition: width 0.3s ease;
+}
+
+.usage-remaining {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.cache-indicator {
+  color: #d4a574;
+  font-size: 0.8rem;
+  margin: 4px 0 0 0;
+  font-weight: 500;
+}
+
 /* Footer */
 .footer {
   color: #95a5a6;

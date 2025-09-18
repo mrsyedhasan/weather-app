@@ -24,4 +24,13 @@ describe('Weather API', () => {
     const response = await request(app).get('/nonexistent');
     expect(response.status).toBe(404);
   });
+
+  test('GET /api-usage should return usage information', async () => {
+    const response = await request(app).get('/api-usage');
+    expect(response.status).toBe(200);
+    expect(response.body).toHaveProperty('requestsUsed');
+    expect(response.body).toHaveProperty('requestsRemaining');
+    expect(response.body).toHaveProperty('maxRequests');
+    expect(response.body).toHaveProperty('status');
+  });
 });

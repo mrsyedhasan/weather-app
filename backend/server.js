@@ -6,6 +6,70 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Rate limiting configuration
+const RATE_LIMIT_CONFIG = {
+  maxRequests: 999, // Leave 1 request buffer
+  windowMs: 24 * 60 * 60 * 1000, // 24 hours in milliseconds
+  resetTime: new Date().setHours(24, 0, 0, 0) // Reset at midnight
+};
+
+// In-memory storage for rate limiting (in production, use Redis)
+let apiUsage = {
+  requestCount: 0,
+  lastReset: RATE_LIMIT_CONFIG.resetTime,
+  requests: new Map() // Store requests with timestamps
+};
+
+// Cache for weather data (5 minutes)
+const weatherCache = new Map();
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
+// Rate limiting and caching functions
+function checkRateLimit() {
+  const now = Date.now();
+  
+  // Reset counter at midnight
+  if (now >= apiUsage.lastReset + RATE_LIMIT_CONFIG.windowMs) {
+    apiUsage.requestCount = 0;
+    apiUsage.lastReset = now;
+    apiUsage.requests.clear();
+    console.log('🔄 Rate limit reset at midnight');
+  }
+  
+  return {
+    allowed: apiUsage.requestCount < RATE_LIMIT_CONFIG.maxRequests,
+    remaining: Math.max(0, RATE_LIMIT_CONFIG.maxRequests - apiUsage.requestCount),
+    resetTime: apiUsage.lastReset + RATE_LIMIT_CONFIG.windowMs
+  };
+}
+
+function incrementRequestCount() {
+  apiUsage.requestCount++;
+  apiUsage.requests.set(Date.now(), true);
+  console.log(`📊 API requests used: ${apiUsage.requestCount}/${RATE_LIMIT_CONFIG.maxRequests}`);
+}
+
+function getCachedWeather(zipCode) {
+  const cacheKey = `weather_${zipCode}`;
+  const cached = weatherCache.get(cacheKey);
+  
+  if (cached && (Date.now() - cached.timestamp) < CACHE_DURATION) {
+    console.log(`💾 Cache hit for zip code: ${zipCode}`);
+    return cached.data;
+  }
+  
+  return null;
+}
+
+function setCachedWeather(zipCode, data) {
+  const cacheKey = `weather_${zipCode}`;
+  weatherCache.set(cacheKey, {
+    data,
+    timestamp: Date.now()
+  });
+  console.log(`💾 Cached weather for zip code: ${zipCode}`);
+}
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -17,6 +81,21 @@ const WEATHER_API_BASE_URL = 'https://api.openweathermap.org/data/2.5';
 // Routes
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', message: 'Weather API is running' });
+});
+
+// API usage endpoint
+app.get('/api-usage', (req, res) => {
+  const rateLimit = checkRateLimit();
+  const nextReset = new Date(rateLimit.resetTime);
+  
+  res.json({
+    requestsUsed: apiUsage.requestCount,
+    requestsRemaining: rateLimit.remaining,
+    maxRequests: RATE_LIMIT_CONFIG.maxRequests,
+    resetTime: nextReset.toISOString(),
+    cacheSize: weatherCache.size,
+    status: rateLimit.allowed ? 'OK' : 'RATE_LIMITED'
+  });
 });
 
 app.get('/weather/:zipCode', async (req, res) => {
@@ -35,6 +114,29 @@ app.get('/weather/:zipCode', async (req, res) => {
       });
     }
 
+    // Check cache first
+    const cachedWeather = getCachedWeather(zipCode);
+    if (cachedWeather) {
+      return res.json({
+        ...cachedWeather,
+        cached: true,
+        cacheTimestamp: new Date().toISOString()
+      });
+    }
+
+    // Check rate limit
+    const rateLimit = checkRateLimit();
+    if (!rateLimit.allowed) {
+      const resetTime = new Date(rateLimit.resetTime);
+      return res.status(429).json({
+        error: 'Daily API limit reached. Please try again tomorrow.',
+        requestsUsed: apiUsage.requestCount,
+        maxRequests: RATE_LIMIT_CONFIG.maxRequests,
+        resetTime: resetTime.toISOString(),
+        message: 'Rate limit exceeded. Weather data is cached for 5 minutes to reduce API calls.'
+      });
+    }
+
     // Get weather data from OpenWeatherMap API
     const response = await axios.get(`${WEATHER_API_BASE_URL}/weather`, {
       params: {
@@ -43,6 +145,9 @@ app.get('/weather/:zipCode', async (req, res) => {
         units: 'imperial' // Get temperature in Fahrenheit
       }
     });
+
+    // Increment request count
+    incrementRequestCount();
 
     const weatherData = {
       location: {
@@ -64,8 +169,16 @@ app.get('/weather/:zipCode', async (req, res) => {
       humidity: response.data.main.humidity,
       windSpeed: response.data.wind.speed,
       visibility: response.data.visibility / 1000, // Convert to km
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
+      cached: false,
+      apiUsage: {
+        requestsUsed: apiUsage.requestCount,
+        requestsRemaining: RATE_LIMIT_CONFIG.maxRequests - apiUsage.requestCount
+      }
     };
+
+    // Cache the weather data
+    setCachedWeather(zipCode, weatherData);
 
     res.json(weatherData);
   } catch (error) {

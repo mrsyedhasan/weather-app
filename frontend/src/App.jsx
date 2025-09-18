@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Search, MapPin, Thermometer, Droplets, Wind, Eye, Loader2 } from 'lucide-react';
 import './App.css';
@@ -10,6 +10,7 @@ function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [apiUsage, setApiUsage] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,12 +23,39 @@ function App() {
     try {
       const response = await axios.get(`${API_BASE_URL}/weather/${zipCode}`);
       setWeatherData(response.data);
+      
+      // Update API usage info
+      if (response.data.apiUsage) {
+        setApiUsage(response.data.apiUsage);
+      }
     } catch (err) {
-      setError(err.response?.data?.error || 'Failed to fetch weather data');
+      if (err.response?.status === 429) {
+        setError(`Rate limit exceeded: ${err.response.data.error}`);
+        if (err.response.data.resetTime) {
+          const resetTime = new Date(err.response.data.resetTime).toLocaleString();
+          setError(prev => prev + ` Resets at: ${resetTime}`);
+        }
+      } else {
+        setError(err.response?.data?.error || 'Failed to fetch weather data');
+      }
     } finally {
       setLoading(false);
     }
   };
+
+  // Fetch API usage on component mount
+  useEffect(() => {
+    const fetchApiUsage = async () => {
+      try {
+        const response = await axios.get(`${API_BASE_URL}/api-usage`);
+        setApiUsage(response.data);
+      } catch (err) {
+        console.error('Failed to fetch API usage:', err);
+      }
+    };
+    
+    fetchApiUsage();
+  }, []);
 
   const getWeatherIcon = (iconCode) => {
     return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
@@ -132,8 +160,35 @@ function App() {
           </div>
         )}
 
+        {apiUsage && (
+          <div className="api-usage">
+            <div className="usage-info">
+              <span className="usage-label">API Usage:</span>
+              <span className="usage-count">
+                {apiUsage.requestsUsed || 0} / {apiUsage.maxRequests || 999}
+              </span>
+              <div className="usage-bar">
+                <div 
+                  className="usage-progress" 
+                  style={{ 
+                    width: `${((apiUsage.requestsUsed || 0) / (apiUsage.maxRequests || 999)) * 100}%` 
+                  }}
+                ></div>
+              </div>
+            </div>
+            {apiUsage.requestsRemaining !== undefined && (
+              <p className="usage-remaining">
+                {apiUsage.requestsRemaining} requests remaining today
+              </p>
+            )}
+          </div>
+        )}
+
         <footer className="footer">
           <p>Powered by OpenWeatherMap API</p>
+          {weatherData?.cached && (
+            <p className="cache-indicator">📦 Data from cache (5min)</p>
+          )}
         </footer>
       </div>
     </div>
