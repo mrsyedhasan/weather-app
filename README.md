@@ -275,7 +275,7 @@ The project includes comprehensive testing:
 
 ### Getting Help
 
-- Check the [Issues](https://github.com/your-username/weather-app/issues) page
+- Check the [Issues](https://github.com/mrsyedhasan/weather-app/issues) page
 - Review the test files for usage examples
 - Check the browser console for error messages
 
