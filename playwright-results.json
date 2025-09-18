@@ -1,0 +1,2882 @@
+{
+  "config": {
+    "configFile": "/Users/syed/Home App/weather-app/playwright.config.js",
+    "rootDir": "/Users/syed/Home App/weather-app/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/syed/Home App/weather-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/syed/Home App/weather-app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/syed/Home App/weather-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/syed/Home App/weather-app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/syed/Home App/weather-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/syed/Home App/weather-app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/syed/Home App/weather-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/syed/Home App/weather-app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/syed/Home App/weather-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/syed/Home App/weather-app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "weather-app.spec.js",
+      "file": "weather-app.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Weather App",
+          "file": "weather-app.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display the app title and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 340,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:14.682Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-5df0cddfe0be584dda3d",
+              "file": "weather-app.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should have a search input and button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 349,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:14.677Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-b88c286cc9bf96c2639b",
+              "file": "weather-app.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should enable search button when zip code is entered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 443,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:14.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-1300c079216e3df6146f",
+              "file": "weather-app.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should show error for invalid zip code format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 557,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:14.672Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-0cb0e8f5fbacacd11427",
+              "file": "weather-app.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should show error for empty zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 390,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:14.672Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-84efa96bf8cae920e9be",
+              "file": "weather-app.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should show API key error when no API key is configured",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 5399,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 98,
+                          "line": 64
+                        },
+                        "snippet": "  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 98,
+                            "line": 64
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n\n  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:14.675Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 98,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-030f33ca05d8aebccfed",
+              "file": "weather-app.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "should show loading state when searching",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 764,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 47,
+                          "line": 75
+                        },
+                        "snippet": "  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 47,
+                            "line": 75
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n\n  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.173Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 47,
+                        "line": 75
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-5944c45835b5146cde42",
+              "file": "weather-app.spec.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "should have proper form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 716,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.173Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-e88deff99390b403ed00",
+              "file": "weather-app.spec.js",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 175,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.228Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-33e1012432af346c7ea6",
+              "file": "weather-app.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "should display footer information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 193,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.278Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-7e05744ddc192dd164c7",
+              "file": "weather-app.spec.js",
+              "line": 107,
+              "column": 3
+            },
+            {
+              "title": "should display the app title and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 889,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.688Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-ebf46b97bab3ca642eec",
+              "file": "weather-app.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should have a search input and button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 779,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.683Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-79f61e2414609c2226e3",
+              "file": "weather-app.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should enable search button when zip code is entered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 829,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.736Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-408e5e37139904c21562",
+              "file": "weather-app.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should show error for invalid zip code format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1008,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:16.151Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-637e7ec1ece6e6fff959",
+              "file": "weather-app.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should show error for empty zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 881,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:16.201Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-191f5eddf42a3e341b2d",
+              "file": "weather-app.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should show API key error when no API key is configured",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 5524,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 98,
+                          "line": 64
+                        },
+                        "snippet": "  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 98,
+                            "line": 64
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n\n  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:17.016Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 98,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-3e84758c2fe8c6942d18",
+              "file": "weather-app.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "should show loading state when searching",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 931,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 47,
+                          "line": 75
+                        },
+                        "snippet": "  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 47,
+                            "line": 75
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n\n  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:17.356Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 47,
+                        "line": 75
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-c66f908a9ab8c5e6863a",
+              "file": "weather-app.spec.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "should have proper form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 573,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:17.755Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-62049b59c044009204c2",
+              "file": "weather-app.spec.js",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 317,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.253Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-b49e18ccc6739a869089",
+              "file": "weather-app.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "should display footer information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 284,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.335Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-39250408c6d3ce9f8d3c",
+              "file": "weather-app.spec.js",
+              "line": 107,
+              "column": 3
+            },
+            {
+              "title": "should display the app title and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 454,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.338Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-c9bede4a0d7f41e3984f",
+              "file": "weather-app.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should have a search input and button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 485,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.314Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-5dd05ff695012b73029f",
+              "file": "weather-app.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should enable search button when zip code is entered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 492,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.244Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-462e5dbc75f230a40dca",
+              "file": "weather-app.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should show error for invalid zip code format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 662,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.891Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-7e3ada1d392170eeb879",
+              "file": "weather-app.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should show error for empty zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 363,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.735Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-8ef4012d24847fd1b2df",
+              "file": "weather-app.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should show API key error when no API key is configured",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 5392,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 98,
+                          "line": 64
+                        },
+                        "snippet": "  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 98,
+                            "line": 64
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n\n  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.885Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 98,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-9ac86669a2d2d88cfcde",
+              "file": "weather-app.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "should show loading state when searching",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 896,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 47,
+                          "line": 75
+                        },
+                        "snippet": "  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 47,
+                            "line": 75
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n\n  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.931Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 47,
+                        "line": 75
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-c7b62d713ed70bc5f6ce",
+              "file": "weather-app.spec.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "should have proper form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 451,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:19.943Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-ed151db5035adb4a36ad",
+              "file": "weather-app.spec.js",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 249,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.104Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-cd046310e78a77d9fdf2",
+              "file": "weather-app.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "should display footer information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 482,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.513Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-850f4b255177240fb434",
+              "file": "weather-app.spec.js",
+              "line": 107,
+              "column": 3
+            },
+            {
+              "title": "should display the app title and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 279,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.658Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-b87b0191e39407eedd60",
+              "file": "weather-app.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should have a search input and button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 278,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.657Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-34deb28017343ac2bf31",
+              "file": "weather-app.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should enable search button when zip code is entered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 288,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.141Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-ed549f9ff4ac62e61bcf",
+              "file": "weather-app.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should show error for invalid zip code format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 390,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.040Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-ee725d5ebae53840f494",
+              "file": "weather-app.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should show error for empty zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 279,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.040Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-1192499786e70fa9e72f",
+              "file": "weather-app.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should show API key error when no API key is configured",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 5284,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 98,
+                          "line": 64
+                        },
+                        "snippet": "  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 98,
+                            "line": 64
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n\n  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.418Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 98,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-51ea611f4a78e230b018",
+              "file": "weather-app.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "should show loading state when searching",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 717,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 47,
+                          "line": 75
+                        },
+                        "snippet": "  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 47,
+                            "line": 75
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n\n  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.324Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 47,
+                        "line": 75
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-9b04dcf6ba230a515d8f",
+              "file": "weather-app.spec.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "should have proper form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 791,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.435Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-947505e3889f80b9e958",
+              "file": "weather-app.spec.js",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 217,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.518Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-35b3a7d60b84a5a6764a",
+              "file": "weather-app.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "should display footer information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 217,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.742Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-ec159e80b3a3c1d23faa",
+              "file": "weather-app.spec.js",
+              "line": 107,
+              "column": 3
+            },
+            {
+              "title": "should display the app title and description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:22.251Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-b5553a83774845d3007b",
+              "file": "weather-app.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should have a search input and button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:22.290Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-16c2672c472ebceb4dd2",
+              "file": "weather-app.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should enable search button when zip code is entered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 410,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:22.518Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-ad3fb4d5a121043c47df",
+              "file": "weather-app.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should show error for invalid zip code format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 344,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:22.802Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-81d2b40ba0a8f2df392e",
+              "file": "weather-app.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should show error for empty zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 318,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:22.817Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-72893c718d83b1ebe8d4",
+              "file": "weather-app.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should show API key error when no API key is configured",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 5447,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 98,
+                          "line": 64
+                        },
+                        "snippet": "  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 98,
+                            "line": 64
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText(/weather api key not configured|failed to fetch weather data/i)\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/weather api key not configured|failed to fetch weather data/i)\u001b[22m\n\n\n  62 |     \n  63 |     // Should show either API key error or generic error message\n> 64 |     await expect(page.getByText(/weather api key not configured|failed to fetch weather data/i)).toBeVisible();\n     |                                                                                                  ^\n  65 |   });\n  66 |\n  67 |   test('should show loading state when searching', async ({ page }) => {\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:64:98"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.155Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-a6e22-en-no-API-key-is-configured-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 98,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-401daa34ba6cdc152982",
+              "file": "weather-app.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "should show loading state when searching",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 791,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47",
+                        "location": {
+                          "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                          "column": 47,
+                          "line": 75
+                        },
+                        "snippet": "  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                            "column": 47,
+                            "line": 75
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByTestId('spinner')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('spinner')\u001b[22m\n\n\n  73 |     // Start the request and immediately check for spinner\n  74 |     const clickPromise = searchButton.click();\n> 75 |     await expect(page.getByTestId('spinner')).toBeVisible({ timeout: 500 });\n     |                                               ^\n  76 |     await clickPromise;\n  77 |   });\n  78 |\n    at /Users/syed/Home App/weather-app/tests/weather-app.spec.js:75:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.061Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/syed/Home App/weather-app/test-results/weather-app-Weather-App-sh-bb7a9-oading-state-when-searching-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/syed/Home App/weather-app/tests/weather-app.spec.js",
+                        "column": 47,
+                        "line": 75
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-b89b97b3312e93bd50e5",
+              "file": "weather-app.spec.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "should have proper form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 361,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.142Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-0fb622fc62c96ccdd2f5",
+              "file": "weather-app.spec.js",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 284,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-23f29bd9fc60bca9ee10",
+              "file": "weather-app.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "should display footer information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 261,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.445Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-9489b4f5be17a7014ab1",
+              "file": "weather-app.spec.js",
+              "line": 107,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Backend API Health Check",
+          "file": "weather-app.spec.js",
+          "line": 112,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should respond to health check endpoint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.400Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-315a556274a7c9258321",
+              "file": "weather-app.spec.js",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should return 400 for invalid zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.411Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-52d336093d1a8d745f32",
+              "file": "weather-app.spec.js",
+              "line": 122,
+              "column": 3
+            },
+            {
+              "title": "should return 500 for missing API key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.415Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-2aa3b475cbe809347c3f",
+              "file": "weather-app.spec.js",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "should return 404 for non-existent routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:15.424Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-9866993a1c4a67c94c8f",
+              "file": "weather-app.spec.js",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "should respond to health check endpoint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 17,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.528Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-acf05abd60a53f1a5302",
+              "file": "weather-app.spec.js",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should return 400 for invalid zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.552Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-b002549d6e46790083ad",
+              "file": "weather-app.spec.js",
+              "line": 122,
+              "column": 3
+            },
+            {
+              "title": "should return 500 for missing API key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.559Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-d6f539c09ec126748e45",
+              "file": "weather-app.spec.js",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "should return 404 for non-existent routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:18.567Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-34420e8579490b926275",
+              "file": "weather-app.spec.js",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "should respond to health check endpoint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.358Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-710aff2a39a56a48ef62",
+              "file": "weather-app.spec.js",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should return 400 for invalid zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.375Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-e8bd2374fb55e0e92df7",
+              "file": "weather-app.spec.js",
+              "line": 122,
+              "column": 3
+            },
+            {
+              "title": "should return 500 for missing API key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.382Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-7fe6154191551814cae8",
+              "file": "weather-app.spec.js",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "should return 404 for non-existent routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:20.389Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-c125fe3bbe1a4dee5414",
+              "file": "weather-app.spec.js",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "should respond to health check endpoint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.964Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-5c755c5137337591414f",
+              "file": "weather-app.spec.js",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should return 400 for invalid zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.979Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-47a3730077f6f4f1faa9",
+              "file": "weather-app.spec.js",
+              "line": 122,
+              "column": 3
+            },
+            {
+              "title": "should return 500 for missing API key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.987Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-2475d06211e690a72bc8",
+              "file": "weather-app.spec.js",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "should return 404 for non-existent routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:21.993Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-489bc90757e601bf6c3b",
+              "file": "weather-app.spec.js",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "should respond to health check endpoint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.509Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-8f4b1cfc23745d208cb2",
+              "file": "weather-app.spec.js",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should return 400 for invalid zip code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.523Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-e87bafd645e2aff75346",
+              "file": "weather-app.spec.js",
+              "line": 122,
+              "column": 3
+            },
+            {
+              "title": "should return 500 for missing API key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.534Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-06a3eb0d1458192d2a8f",
+              "file": "weather-app.spec.js",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "should return 404 for non-existent routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-18T18:12:23.544Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5fdbbbc2e9b541f79246-97878fc906313d2dfd55",
+              "file": "weather-app.spec.js",
+              "line": 147,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-18T18:12:14.398Z",
+    "duration": 14359.698,
+    "expected": 60,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

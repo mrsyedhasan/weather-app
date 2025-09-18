@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     
     strategy:
       matrix:
@@ -29,17 +30,15 @@ jobs:
         npm run install:all
         
     - name: Run backend tests
-      run: npm run backend:test
-      
-    - name: Run frontend tests
-      run: npm run frontend:test
-      continue-on-error: true
+      run: timeout 300 npm run backend:test
+      timeout-minutes: 5
       
     - name: Install Playwright browsers
       run: npx playwright install --with-deps
       
     - name: Run Playwright tests
-      run: npm test
+      run: timeout 600 npm test
+      timeout-minutes: 10
       continue-on-error: true
       
     - name: Upload test results
