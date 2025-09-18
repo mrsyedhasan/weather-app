@@ -9,7 +9,7 @@
 3. **Click "New Project"**
 4. **Select "Deploy from GitHub repo"**
 5. **Choose your repository**: `mrsyedhasan/weather-app`
-6. **Select "Backend"** as the service
+6. **Set Root Directory**: `backend`
 7. **Railway will auto-detect** it's a Node.js app
 
 ### **Step 2: Configure Environment Variables**
@@ -24,12 +24,15 @@ In Railway dashboard:
    NODE_ENV=production
    ```
 
-### **Step 3: Deploy Frontend to Railway**
+### **Step 3: Deploy Frontend to Vercel (Recommended)**
 
-1. **Add another service** in the same project
-2. **Select "Deploy from GitHub repo"**
-3. **Choose your repository** again
-4. **Select "Frontend"** as the service
+1. **Go to Vercel**: https://vercel.com
+2. **Sign up** with GitHub
+3. **Import your repository**: `mrsyedhasan/weather-app`
+4. **Set build settings**:
+   - **Root Directory**: `frontend`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
 5. **Add environment variable**:
    ```
    VITE_API_URL=https://your-backend-url.railway.app
