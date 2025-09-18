@@ -14,7 +14,7 @@ A modern, responsive weather application built with React and Node.js. Get real-
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-username.github.io/weather-app) (Replace with your GitHub Pages URL)
+[View Live Demo](https://weather-app-sooty-xi-60.vercel.app)
 
 ## 🛠️ Tech Stack
 
