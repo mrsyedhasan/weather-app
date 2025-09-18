@@ -53,7 +53,7 @@ A modern, responsive weather application built with React and Node.js. Get real-
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/mrsyedhasan/weather-app.git
 cd weather-app
 ```
 
