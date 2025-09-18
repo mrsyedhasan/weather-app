@@ -1,0 +1,26 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A modern weather app with React frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend && npm test"
+  },
+  "keywords": ["weather", "react", "nodejs", "playwright", "api"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^9.2.1",
+    "wait-on": "^9.0.0"
+  }
+}
