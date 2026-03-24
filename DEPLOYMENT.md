@@ -71,27 +71,17 @@ This guide covers various deployment options for the Weather App.
 4. **Deploy**:
    - Netlify will build and deploy automatically
 
-### 4. Railway (Full Stack)
+### 4. Koyeb (backend API)
 
-**Pros**: Free tier, easy database integration
-**Cons**: Limited hours per month
+**Pros**: Free tier for small services, GitHub deploys  
+**Cons**: Cold starts on free tier after idle
 
 #### Setup Steps:
 
-1. **Connect Repository**:
-   - Visit [railway.app](https://railway.app)
-   - Sign up with GitHub
-   - Create new project from GitHub repo
-
-2. **Configure Services**:
-   - Add two services: one for backend, one for frontend
-   - Set build commands and start commands
-
-3. **Add Environment Variables**:
-   - Add `OPENWEATHER_API_KEY` in project settings
-
-4. **Deploy**:
-   - Railway will automatically deploy
+1. **Create a Web Service** on [Koyeb](https://www.koyeb.com/) from your GitHub repo.
+2. **Root directory**: `backend` (so `npm start` runs the Express API).
+3. **Environment variables**: `OPENWEATHER_API_KEY` (required). `PORT` is set by Koyeb at runtime.
+4. **Frontend (Vercel/Netlify)**: set `VITE_API_URL` to your Koyeb service URL (e.g. `https://your-app.koyeb.app`) and redeploy the frontend.
 
 ## 🔧 Environment Variables
 
@@ -253,7 +243,7 @@ services:
 | GitHub Pages | Unlimited | N/A | Static sites |
 | Vercel | 100GB bandwidth | $20/month | Full-stack apps |
 | Netlify | 100GB bandwidth | $19/month | JAMstack apps |
-| Railway | 500 hours/month | $5/month | Full-stack with DB |
+| Koyeb | Free tier limits | Paid plans | Small APIs / backends |
 | Heroku | 550-1000 dyno hours | $7/month | Traditional apps |
 
 ## 🎯 Recommended Setup
@@ -261,8 +251,8 @@ services:
 For a production weather app, I recommend:
 
 1. **Frontend**: Vercel or Netlify
-2. **Backend**: Railway or Heroku
-3. **Database**: Railway PostgreSQL (if needed)
+2. **Backend**: Koyeb, Render, or Heroku
+3. **Database**: Your host’s managed PostgreSQL (if needed)
 4. **Monitoring**: Uptime Robot + Sentry
 5. **CDN**: Cloudflare (free)
 

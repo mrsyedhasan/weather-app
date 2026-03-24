@@ -220,7 +220,7 @@ weather-app/
 - **Vercel**: Connect your GitHub repository
 - **Netlify**: Connect your GitHub repository
 - **Heroku**: Add buildpacks for Node.js and static files
-- **Railway**: Deploy with zero configuration
+- **Koyeb**: Deploy the `backend/` folder as a web service (see `DEPLOYMENT.md`)
 
 ## 🔑 Getting OpenWeatherMap API Key
 
