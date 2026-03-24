@@ -68,6 +68,8 @@ jobs:
       run: npm run install:all
 
     - name: Build frontend
+      env:
+        VITE_BASE_PATH: /${{ github.event.repository.name }}/
       run: npm run build
 
     # Pages-specific artifact (name defaults to github-pages); required for deploy-pages
