@@ -48,6 +48,7 @@ jobs:
         name: playwright-report-${{ matrix.node-version }}
         path: playwright-report/
         retention-days: 30
+        if-no-files-found: ignore
 
   build:
     runs-on: ubuntu-latest
