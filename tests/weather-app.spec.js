@@ -60,8 +60,12 @@ test.describe('Weather App', () => {
     await searchInput.fill('90210');
     await searchButton.click();
     
-    // Should show API key error message
-    await expect(page.getByText(/invalid api key|failed to fetch weather data/i)).toBeVisible();
+    // Backend returns 500 with configured message when key is missing (see server.js)
+    await expect(
+      page.getByText(
+        /weather api key not configured|invalid api key|failed to fetch weather data/i,
+      ),
+    ).toBeVisible();
   });
 
   test.skip('should show loading state when searching', async ({ page }) => {
@@ -129,12 +133,11 @@ test.describe('Backend API Health Check', () => {
 
   test('should return 500 for missing API key', async ({ request }) => {
     const response = await request.get('http://localhost:3001/weather/90210');
-    
-    // Should return 500 with invalid API key
+
     expect(response.status()).toBe(500);
-    
+
     const data = await response.json();
-    expect(data.error).toContain('Invalid API key');
+    expect(data.error).toMatch(/Weather API key not configured|Invalid API key/i);
   });
 
   test('should return 404 for non-existent routes', async ({ request }) => {

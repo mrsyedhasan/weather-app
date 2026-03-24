@@ -264,12 +264,12 @@ describe('Weather API Server - 100% Coverage', () => {
 
   describe('Weather Endpoint - API Key Errors', () => {
     test('GET /weather/:zipCode should return 500 when API key is not configured', async () => {
-      // Backup the .env file
       if (fs.existsSync(envPath)) {
         fs.renameSync(envPath, envBackupPath);
       }
-      
-      // Clear module cache and import fresh app
+
+      delete process.env.OPENWEATHER_API_KEY;
+      jest.resetModules();
       app = require('../server');
 
       const response = await request(app)
@@ -277,10 +277,9 @@ describe('Weather API Server - 100% Coverage', () => {
         .expect(500);
 
       expect(response.body).toEqual({
-        error: 'Invalid API key. Please check configuration.'
+        error: 'Weather API key not configured',
       });
 
-      // Restore .env file
       if (fs.existsSync(envBackupPath)) {
         fs.renameSync(envBackupPath, envPath);
       }

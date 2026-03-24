@@ -59,7 +59,12 @@ module.exports = defineConfig({
     {
       command: 'cd backend && npm run dev',
       port: 3001,
-      reuseExistingServer: !process.env.CI,
+      // Always start a fresh backend so OPENWEATHER_API_KEY is empty (dotenv will not override an existing env var).
+      reuseExistingServer: false,
+      env: {
+        ...process.env,
+        OPENWEATHER_API_KEY: '',
+      },
     },
     {
       command: 'cd frontend && npm run dev',
