@@ -70,7 +70,7 @@ jobs:
     - name: Build frontend
       run: npm run build
 
-    # Pages-specific artifact (name defaults to github-pages) — required for deploy-pages
+    # Pages-specific artifact (name defaults to github-pages); required for deploy-pages
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v4
       with:
@@ -82,7 +82,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     environment:
-      name: github-pages
+      name: 'github-pages'
       url: ${{ steps.deployment.outputs.page_url }}
 
     permissions:
